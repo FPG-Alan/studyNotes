@@ -54,7 +54,7 @@ https://api.twitter.com/oauth/authenticate?oauth_token=NPcudxy0yU5T3tBzho7iCotZ3
 ```
 基于用户的状态, 这个页面会有三种情况:  
 1. 已经登录和授权  
-    如果用户处于这个状态, 页面会立刻返回设定的回调地址, 跳转到Twitter的过程对于用户来说是不明显的.
+    如果用户处于这个状态, 页面会立刻返回设定的回调地址, 跳转到Twitter的过程对于用户来说是不明显的.
 2. 已经登录但没有授权
     显示一个请求授权页面, 在用户选择后跳转到设定的回调地址, 并带有一个有效的OAuth请求令牌(OAuth request token)
 3. 没有登录
@@ -77,7 +77,7 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
 ```
 
 ### Step3 - 将`request token`转化为`access_token`  
-后端需要发起一个POST请求到`oauth/access_token`, 并附加第二步中获得的`oauth_verifier`, header中添加`oauth_token`.
+后端需要发起一个POST请求到`oauth/access_token`, 并附加第二步中获得的`oauth_verifier`, header中添加`oauth_token`.
 ![](https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-oauth-3_0.png)
 
 请求示例: 
