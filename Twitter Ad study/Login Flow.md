@@ -78,6 +78,7 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
 
 ### Step3 - 将`request token`转化为`access_token`  
 后端需要发起一个POST请求到`oauth/access_token`, 并附加第二步中获得的`oauth_verifier`, header中添加`oauth_token`.
+
 ![](https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-oauth-3_0.png)
 
 请求示例: 
